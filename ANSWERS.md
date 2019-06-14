@@ -8,4 +8,8 @@ Bcrypt provides a method to disguise user passwords called hashing. Hashing make
 
 3. What does bcrypt do to slow down attackers?
 
-4) What are the three parts of the JSON Web Token?
+Bcrypt hashes passwords 10 ^ n times, n being the input number of hashes in our generate token function, which changes a password from being stored as plain text to an elaborate string that attackers must decrypt in order to access the user's password.
+
+4. What are the three parts of the JSON Web Token?
+
+Header, Payload Signature
