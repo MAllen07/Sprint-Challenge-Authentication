@@ -30,8 +30,9 @@ function register(req, res) {
         res.status(500).json(err.message)
       });
   };
-
 };
+
+
 
 function login(req, res) {
   const { username, password } = req.body;
