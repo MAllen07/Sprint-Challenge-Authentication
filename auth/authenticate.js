@@ -15,7 +15,7 @@ function generateToken(user) {
   };
 
   const options = {
-    expiresIn: '6h',
+    expiresIn: '12h',
   };
   const secret = process.env.JWT_SECRET;
   return jwt.sign(payload, secret, options)
